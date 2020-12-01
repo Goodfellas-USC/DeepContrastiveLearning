@@ -1,4 +1,4 @@
-## Bias detection using Deep Supervised Contrastive Learning (Goodfellas)
+## Bias Detection using Deep Supervised Contrastive Learning (Goodfellas)
 
 
 
