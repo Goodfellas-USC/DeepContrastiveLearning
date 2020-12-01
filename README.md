@@ -3,7 +3,7 @@
 
 
 [Sina Aghaei](mailto:saghaei@usc.edu)<sup>1</sup>, [Zahra Abrishami](mailto:zabrisha@usc.edu)<sup>2</sup>, 
-[Ali Ghafelehbash](mailto:ghafeleb@usc.edu)<sup>1</sup>, [Bahareh Harandizadeh](mailto:harandiz@usc.edu)<sup>2</sup>, [Negar Mokhberian](mailto:nmokhber@usc.edu)<sup>2</sup>
+[Ali Ghafelehbashi](mailto:ghafeleb@usc.edu)<sup>1</sup>, [Bahareh Harandizadeh](mailto:harandiz@usc.edu)<sup>2</sup>, [Negar Mokhberian](mailto:nmokhber@usc.edu)<sup>2</sup>
 
 <sup>1</sup>Department of Industrial and Systems Engineering, University of Southern California, Los Angeles, CA 90008<br/>
 <sup>2</sup>Department of Computer Science, University of Southern California, Los Angeles, CA 90008
