@@ -111,7 +111,7 @@ In the figure 3 we show the first few lines of the dataset. We assign Huffington
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/length_distribution.png" width="450" />  -->
 </p>
 <p  align="center">
-<b>Figure 4:</b> Overview of the dataset.
+<b>Figure 4:</b> Histogram of the length of articles in COVID-19 dataset.
 </p>
 
 Another step that we do is topic modeling to make sure all the articles are about the same subject ''covid19''. We use Latent Dirichlet Allocation (LDA) for this step. The topics we found are as follows:
