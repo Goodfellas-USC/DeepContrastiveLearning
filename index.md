@@ -20,17 +20,12 @@ In this work we want to understand how different are news articles on the same s
 
 A proxy for this goal could be a classifier which tries to classify news articles depending on their political party. Existing approaches such as [[6]](#6) tackle this problem using a classifier on the space of the words embedding. The problem with this approach is that it is not end to end, i.e., the embedding are not trained with the purpose of getting a good classification result. As we can see in figure 1 (right), with general purpose word embedding models such as BERT [[5]](#5), classifying embedded articles might not be straightforward. Having a new representation such as the one shown in figure 1 (left) where it maximizes the distance between embedding from different classes could make the classification task much easier, as in the latent space, the bias is exposed.
 <br />
-<div style="text-align:center">
-    <img src='https://www.linkpicture.com/q/embedding_1.png' type='image' width='250' align="center" />
-  <img src='https://www.linkpicture.com/q/bias_1.png' type='image' width='250' align="center" />
-</div>
 
-<!--
-<p>
-  <a href='https://www.linkpicture.com/view.php?img=LPic5fc593fd4f927164324048'><img src='https://www.linkpicture.com/q/embedding_1.png' type='image' width='250' align="center"></a>
-  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59442d9bef2013716327'><img src='https://www.linkpicture.com/q/bias_1.png' type='image' width='250' align="center"></a>
+<p align='center'>
+  <a href='https://www.linkpicture.com/view.php?img=LPic5fc593fd4f927164324048'><img src='https://www.linkpicture.com/q/embedding_1.png' type='image' width='400' align="center"></a>
+  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59442d9bef2013716327'><img src='https://www.linkpicture.com/q/bias_1.png' type='image' width='400' align="center"></a>
 </p>
- -->
+
 
 <br />
 
@@ -89,7 +84,7 @@ where <a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\mathbb&s
 
 
 <p align="center">
-  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59607f139d808105913'><img src='https://www.linkpicture.com/q/model_1.png' type='image' width="600"></a>
+  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59607f139d808105913'><img src='https://www.linkpicture.com/q/model_1.png' type='image' width="800"></a>
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/model.PNG" width="450" />  -->
 </p>
 <p align="center">
@@ -104,7 +99,7 @@ In the figure 3 we show the first few lines of the dataset. We assign Huffington
 
 
 <p align="center">
-  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59610575c3646721762'><img src='https://www.linkpicture.com/q/data_head_1.png' type='image' width="600"></a>
+  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59610575c3646721762'><img src='https://www.linkpicture.com/q/data_head_1.png' type='image' width="800"></a>
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/data_head.png" width="900" />  -->
 </p>
 <p  align="center">
@@ -112,7 +107,7 @@ In the figure 3 we show the first few lines of the dataset. We assign Huffington
 </p>
 
 <p align="center">
-  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59612ed841794267532'><img src='https://www.linkpicture.com/q/length_distribution_1.png' type='image' width="250"></a>
+  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59612ed841794267532'><img src='https://www.linkpicture.com/q/length_distribution_1.png' type='image' width="400"></a>
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/length_distribution.png" width="450" />  -->
 </p>
 <p  align="center">
@@ -154,7 +149,7 @@ In this section, as one of our baseline methods we train the <b>DeCLUTR</b> mode
 
 
 <p align="center">
-  <a href='https://www.linkpicture.com/view.php?img=LPic5fc596bc0dbb01300739986'><img src='https://www.linkpicture.com/q/DeCUTR_1.png' type='image' width="600"></a>
+  <a href='https://www.linkpicture.com/view.php?img=LPic5fc596bc0dbb01300739986'><img src='https://www.linkpicture.com/q/DeCUTR_1.png' type='image' width="800"></a>
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/DeCUTR.PNG" width="900" />  -->
 </p>
 <p  align="center">
@@ -168,13 +163,13 @@ As our next step, we fit a binary classification model on these embeddings to se
 
 <!-- <p float="center"> -->
 <p>
-<a href="https://www.linkpicture.com/view.php?img=LPic5fc7165b450c41722436072"><img src="https://www.linkpicture.com/q/declutr_pca_1.jpg" type="image" width="250" style="float: left"></a>
+<a href="https://www.linkpicture.com/view.php?img=LPic5fc7165b450c41722436072"><img src="https://www.linkpicture.com/q/declutr_pca_1.jpg" type="image" width="300" style="float: left"></a>
 <!--   <a href="https://www.linkpicture.com/view.php?img=LPic5fc6a47dbe2761391136530"><img src="https://www.linkpicture.com/q/DeCLUTR.png" type="image" width="250"></a>  -->
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/declutr_pca.jpg" width="450" />  -->
-  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166822704741007745"><img src="https://www.linkpicture.com/q/fineBERT_pca.jpg" type="image" width="250" style="float: center"></a>
+  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166822704741007745"><img src="https://www.linkpicture.com/q/fineBERT_pca.jpg" type="image" width="300" style="float: center"></a>
 <!--   <a href="https://www.linkpicture.com/view.php?img=LPic5fc6a5028de2c977500894"><img src="https://www.linkpicture.com/q/goodfellas.png" type="image" width="250"></a> -->
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/fineBERT_pca.png" width="450" /> -->
-  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166a4ea2a118899102"><img src="https://www.linkpicture.com/q/goodfellas_pca.jpg" type="image" width="250" style="float: right"></a>
+  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166a4ea2a118899102"><img src="https://www.linkpicture.com/q/goodfellas_pca.jpg" type="image" width="300" style="float: right"></a>
 </p>
 <p  align="center">
   <b>Figure 6:</b> The visualization of the embeddings from <b>DeCLUTR</b> (left), <b>FineBERT</b> (middle)  and <b>GoodFellas</b> (right) of test data in two dimension. The blue dots belongs to Huffington Post US and the red dots belong to Breitbart
