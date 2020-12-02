@@ -99,7 +99,7 @@ In the figure 3 we show the first few lines of the dataset. We assign Huffington
 
 
 <p align="center">
-  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59610575c3646721762'><img src='https://www.linkpicture.com/q/data_head_1.png' type='image' width="800"></a>
+  <a href="https://www.linkpicture.com/view.php?img=LPic5fc730af5bcf9711017680"><img src="https://www.linkpicture.com/q/image_2020-12-01_22-11-43.png" type="image"></a>
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/data_head.png" width="900" />  -->
 </p>
 <p  align="center">
@@ -166,7 +166,7 @@ As our next step, we fit a binary classification model on these embeddings to se
 <a href="https://www.linkpicture.com/view.php?img=LPic5fc7165b450c41722436072"><img src="https://www.linkpicture.com/q/declutr_pca_1.jpg" type="image" width="225" style="float: center"></a>
 <!--   <a href="https://www.linkpicture.com/view.php?img=LPic5fc6a47dbe2761391136530"><img src="https://www.linkpicture.com/q/DeCLUTR.png" type="image" width="250"></a>  -->
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/declutr_pca.jpg" width="450" />  -->
-  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166822704741007745"><img src="https://www.linkpicture.com/q/fineBERT_pca.jpg" type="image" width="225" style="float: center"></a>
+  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166822704741007745"><img src="https://www.linkpicture.com/q/fineBERT_pca.jpg" type="image" width="245" style="float: center"></a>
 <!--   <a href="https://www.linkpicture.com/view.php?img=LPic5fc6a5028de2c977500894"><img src="https://www.linkpicture.com/q/goodfellas.png" type="image" width="250"></a> -->
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/fineBERT_pca.png" width="450" /> -->
   <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166a4ea2a118899102"><img src="https://www.linkpicture.com/q/goodfellas_pca.jpg" type="image" width="225" style="float: center"></a>
