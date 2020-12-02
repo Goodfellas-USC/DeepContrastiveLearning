@@ -166,7 +166,7 @@ As our next step, we fit a binary classification model on these embeddings to se
 <a href="https://www.linkpicture.com/view.php?img=LPic5fc7165b450c41722436072"><img src="https://www.linkpicture.com/q/declutr_pca_1.jpg" type="image" width="225" style="float: center"></a>
 <!--   <a href="https://www.linkpicture.com/view.php?img=LPic5fc6a47dbe2761391136530"><img src="https://www.linkpicture.com/q/DeCLUTR.png" type="image" width="250"></a>  -->
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/declutr_pca.jpg" width="450" />  -->
-  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166822704741007745"><img src="https://www.linkpicture.com/q/fineBERT_pca.jpg" type="image" width="245" style="float: center"></a>
+  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166822704741007745"><img src="https://www.linkpicture.com/q/fineBERT_pca.jpg" type="image" width="265" style="float: center"></a>
 <!--   <a href="https://www.linkpicture.com/view.php?img=LPic5fc6a5028de2c977500894"><img src="https://www.linkpicture.com/q/goodfellas.png" type="image" width="250"></a> -->
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/fineBERT_pca.png" width="450" /> -->
   <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166a4ea2a118899102"><img src="https://www.linkpicture.com/q/goodfellas_pca.jpg" type="image" width="225" style="float: center"></a>
