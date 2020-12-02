@@ -19,15 +19,23 @@ In any nation, media can be a dividing issue as it might reflect topics differen
 In this work we want to understand how different are news articles on the same subject but from different political parties (left and right) from each other. We want to detect the potential political bias within news articles. We, as human, can easily identify the different political orientation of articles from opposite parties. For example, how different conservative news agencies such as ''Fox News'' approach a subject like Covid-19 compares to a liberal news agency such as ''CNN''. The question is that can machines detect this political bias as well?
 
 A proxy for this goal could be a classifier which tries to classify news articles depending on their political party. Existing approaches such as [[6]](#6) tackle this problem using a classifier on the space of the words embedding. The problem with this approach is that it is not end to end, i.e., the embedding are not trained with the purpose of getting a good classification result. As we can see in figure 1 (right), with general purpose word embedding models such as BERT [[5]](#5), classifying embedded articles might not be straightforward. Having a new representation such as the one shown in figure 1 (left) where it maximizes the distance between embedding from different classes could make the classification task much easier, as in the latent space, the bias is exposed.
+<br />
+<div style="text-align:center">
+    <img src='https://www.linkpicture.com/q/embedding_1.png' type='image' width='250' align="center" />
+  <img src='https://www.linkpicture.com/q/bias_1.png' type='image' width='250' align="center" />
+</div>
 
-
-<p float="center">
-  <a href='https://www.linkpicture.com/view.php?img=LPic5fc593fd4f927164324048'><img src='https://www.linkpicture.com/q/embedding_1.png' type='image' width='250'></a>
-<!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/embedding.PNG" width="450" />  -->
-  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59442d9bef2013716327'><img src='https://www.linkpicture.com/q/bias_1.png' type='image' width='250'></a>
-<!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/bias.PNG" width="450" /> -->
+<!--
+<p>
+  <a href='https://www.linkpicture.com/view.php?img=LPic5fc593fd4f927164324048'><img src='https://www.linkpicture.com/q/embedding_1.png' type='image' width='250' align="center"></a>
+  <a href='https://www.linkpicture.com/view.php?img=LPic5fc59442d9bef2013716327'><img src='https://www.linkpicture.com/q/bias_1.png' type='image' width='250' align="center"></a>
 </p>
+ -->
+
+<br />
+
 <p align="center">
+  <br />
 <b>Figure 1:</b> An ideal latent space (left) where the articles from opposite classes are far from each other which helps to expose the political bias (right) and improves the performance of the classification task.
 </p>
 
@@ -158,14 +166,15 @@ In the implementation of <b>DeCLUTR</b>, in the process of sampling the anchor-p
 For the remaining articles we take 70% of them (8513 articles) as training set and 15% of them (1825 articles) as test. The remaining is used as validation set. We train the <b>DeCLUTR</b> model with the unsupervised contrastive loss on the training data. We set the batch size to 6 and train the model for 10 epochs. We then get the embedding of the test articles under the trained model. The visualization of the embeddings is given in figure 6 (left). The embedding space is 768 dimensional. We applied Principal component analysis (PCA) to get the visualization. As we can see the embeddings are not well-separated from each other.
 As our next step, we fit a binary classification model on these embeddings to see how well it can separate the articles from opposite classes. To do so, we fit a logistic regression model on 75% of the test set. The accuracy of the trained binary classifier on the remaining 25% of the data is 74.17%.  
 
-<p float="center">
-  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7165b450c41722436072"><img src="https://www.linkpicture.com/q/declutr_pca_1.jpg" type="image" width="250"></a>
+<!-- <p float="center"> -->
+<p>
+<a href="https://www.linkpicture.com/view.php?img=LPic5fc7165b450c41722436072"><img src="https://www.linkpicture.com/q/declutr_pca_1.jpg" type="image" width="250" style="float: left"></a>
 <!--   <a href="https://www.linkpicture.com/view.php?img=LPic5fc6a47dbe2761391136530"><img src="https://www.linkpicture.com/q/DeCLUTR.png" type="image" width="250"></a>  -->
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/declutr_pca.jpg" width="450" />  -->
-  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166822704741007745"><img src="https://www.linkpicture.com/q/fineBERT_pca.jpg" type="image" width="250"></a>
+  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166822704741007745"><img src="https://www.linkpicture.com/q/fineBERT_pca.jpg" type="image" width="250" style="float: center"></a>
 <!--   <a href="https://www.linkpicture.com/view.php?img=LPic5fc6a5028de2c977500894"><img src="https://www.linkpicture.com/q/goodfellas.png" type="image" width="250"></a> -->
 <!--   <img src="https://github.com/ghafeleb/goodfellas/blob/main/docs/resources/fineBERT_pca.png" width="450" /> -->
-  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166a4ea2a118899102"><img src="https://www.linkpicture.com/q/goodfellas_pca.jpg" type="image" width="250"></a>
+  <a href="https://www.linkpicture.com/view.php?img=LPic5fc7166a4ea2a118899102"><img src="https://www.linkpicture.com/q/goodfellas_pca.jpg" type="image" width="250" style="float: right"></a>
 </p>
 <p  align="center">
   <b>Figure 6:</b> The visualization of the embeddings from <b>DeCLUTR</b> (left), <b>FineBERT</b> (middle)  and <b>GoodFellas</b> (right) of test data in two dimension. The blue dots belongs to Huffington Post US and the red dots belong to Breitbart
@@ -176,7 +185,7 @@ As our second baseline method, we fine tune BERT [[5]](#5) by adding a classific
 
 Similar to <b>DeCLUTR</b>, we visualize the embeddings given by <b>FineBERT</b> in two dimension shown in figure 6 (middle). Similar to the case <b>DeCLUTR</b> we fit a logistic regression model on 75% of the test set. The accuracy of the trained binary classifier on the remaining 25% of the data is 78.55%. <b>FineBERT</b> is performing better than <b>DeCLUTR</b>.
 
-At the end we implement our model <b>GoodFellas</b>. We use the same setup as <b>DeCLUTR</b> for training the model. The visualization of the embedding in two dimensions is given in figure 6 (right). As we can see the outcome is much better the previous approaches. The embeddings of two classes are quite separate from each other. In the downstream classification task we outperform the baseline methods as we achieve an out of sample accuracy of $79.21\%$. You also can see the results summarization in table 1.
+At the end we implement our model <b>GoodFellas</b>. We use the same setup as <b>DeCLUTR</b> for training the model. The visualization of the embedding in two dimensions is given in figure 6 (right). As we can see the outcome is much better the previous approaches. The embeddings of two classes are quite separate from each other. In the downstream classification task we outperform the baseline methods as we achieve an out of sample accuracy of 79.21%. You also can see the results summarization in table 1.
 
 <p align="center">
   <a href="https://www.linkpicture.com/view.php?img=LPic5fc71808a680e1407211298"><img src="https://www.linkpicture.com/q/table_4.png" type="image" width="400"></a>
